@@ -19,9 +19,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'To-Do List',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: ToDoListScreen(),
     );
   }

@@ -144,8 +144,7 @@ class ToDoListScreen extends StatelessWidget {
         ],
       ),
       floatingActionButton: Container(
-        margin: EdgeInsets.only(
-            right: 20, bottom: 80), // Adjust the margin as needed
+        margin: EdgeInsets.only(right: 20, bottom: 80),
         child: FloatingActionButton(
           onPressed: () => _showAddTaskDialog(context),
           backgroundColor: const Color.fromARGB(255, 142, 167, 143),
@@ -162,12 +161,12 @@ class ToDoListScreen extends StatelessWidget {
       context: context,
       builder: (context) {
         return AlertDialog(
-          backgroundColor: Colors.white, // Change background color
+          backgroundColor: Colors.white,
           title: Text(
             'Add Task',
             style: TextStyle(
               color: const Color.fromARGB(255, 142, 167, 143),
-            ), // Change text color
+            ),
           ),
           content: TextField(
             controller: _controller,
@@ -175,7 +174,7 @@ class ToDoListScreen extends StatelessWidget {
               hintText: 'Enter task',
               hintStyle: TextStyle(
                 color: const Color.fromARGB(255, 191, 207, 192),
-              ), // Change hint text color
+              ),
             ),
           ),
           actions: [
@@ -188,7 +187,7 @@ class ToDoListScreen extends StatelessWidget {
                 'Cancel',
                 style: TextStyle(
                   color: const Color.fromARGB(255, 142, 167, 143),
-                ), // Change text color
+                ),
               ),
             ),
             TextButton(
